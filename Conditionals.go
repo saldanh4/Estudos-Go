@@ -9,9 +9,9 @@ func main() {
 	var number int = 3
 
 	if number%2 == 0 {
-		fmt.Println("O número ", number, " é par")
+		fmt.Printf("O número %v é par\n", number)
 	} else {
-		fmt.Println("O número ", number, " é impar")
+		fmt.Printf("O número %v é impar\n", number)
 	}
 
 	//Declarando variável dentro do contexto IF
