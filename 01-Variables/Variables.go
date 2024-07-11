@@ -1,10 +1,10 @@
-package main
+package variables
 
 import (
 	"fmt"
 )
 
-func main() {
+func variables() {
 	fmt.Println("Definição de Variáveis")
 	//Definição de Variáveis
 	var number int = 10

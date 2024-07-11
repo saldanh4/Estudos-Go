@@ -25,5 +25,6 @@ func main() {
 	for i, j := range myArray {
 		fmt.Printf("Posição %d = %v\n", i, j)
 	}
-
+	//chamando a função stringArrays com parâmetro string
+	stringArrays("André")
 }
