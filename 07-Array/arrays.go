@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	//Criando array com valores inicializados
@@ -23,4 +25,5 @@ func main() {
 	for i, j := range myArray {
 		fmt.Printf("Posição %d = %v\n", i, j)
 	}
+
 }
