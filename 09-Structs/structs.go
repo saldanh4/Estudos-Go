@@ -10,14 +10,13 @@ type Sayajin struct {
 	name string
 }
 
-func returnEmployee(sayajin Sayajin) Sayajin {
-	sayajin.id = 0001
-	sayajin.name = "Goku"
-	return sayajin
+func returnEmployee(sayajin *Sayajin) {
+	(sayajin).id = 1
+	(sayajin).name = "Goku"
 }
 
 func printEmployee(sayajin Sayajin) {
-	sayajin.id = 0002
+	sayajin.id = 2
 	sayajin.name = "Vegeta"
 	fmt.Println("ID: ", sayajin.id)
 	fmt.Println("Name: ", sayajin.name)
@@ -28,7 +27,7 @@ func main() {
 
 	var sayajin, sayajin2 Sayajin
 
-	sayajin = returnEmployee(sayajin)
+	returnEmployee(&sayajin)
 
 	fmt.Println("ID: ", sayajin.id)
 	fmt.Println("Name: ", sayajin.name)

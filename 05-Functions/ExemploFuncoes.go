@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 //função soma
 func soma(num1 int, num2 int) int {
 	sum := num1 + num2
@@ -7,9 +9,8 @@ func soma(num1 int, num2 int) int {
 }
 
 //função para dobrar o valor da variável
-func dobraValor(num int) {
-	num *= 2
-	println(num)
+func dobraValor(num *int) {
+	(*num) *= 2
 }
 
 func main() {
@@ -19,10 +20,13 @@ func main() {
 
 	//Declara variável
 	var x int = 5
-	//exibe o valor inicial
+	//Ponteiro apontando para a variável
+	//p := &x
+
 	println(x)
 	//chama a função que dobra o valor e exibe o resultado.
-	dobraValor(x)
+	dobraValor(&x)
+	fmt.Println(x)
 
 	//atribuí à x o valor de retorno da função subtrai
 	x = subtrai(20, 5)
